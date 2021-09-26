@@ -9,14 +9,13 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-app.use(require('./routes'));
+app.use(require('./routes/api'));
 
 //Connect mongoose
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Social-Network-API', {
-   useFindAndModify: false,
-   useNewUrlParser: true,
-   useUnifiedTopology: true });
-
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true 
+});
 // Log mongoose queries
 mongoose.set('debug', true);
 
