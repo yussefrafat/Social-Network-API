@@ -3,7 +3,7 @@ const { db } = require('../models/Users');
 
 const usersController = {
     // Create a new user 
-    crateUsers({body}, res) {
+    createUsers({body}, res) {
         Users.create(body)
         .then(dbUsersData => res.json(dbUsersData))
         .catch(err => res.status(400).json(err))
