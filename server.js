@@ -1,4 +1,3 @@
-// Require express and mongoose
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -10,14 +9,13 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-app.use(require('./routes/api'));
+app.use(require('./routes'));
 
 //Connect mongoose
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Social-Network-API', {
    useFindAndModify: false,
    useNewUrlParser: true,
-   useUnifiedTopology: true
-});
+   useUnifiedTopology: true });
 
 // Log mongoose queries
 mongoose.set('debug', true);
