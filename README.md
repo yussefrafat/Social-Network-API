@@ -9,3 +9,17 @@ This is a project where I built the APIs on the backend for a social network web
 - Node
 - Mongoose
 - Moment
+
+# Installation
+
+- Git Clone Rep
+- NPM INSTALL 
+- NPM START 
+- Go and Open LocalHost in Insomnia or Postman
+
+# Usage
+
+To start the application once everything is installed you can run nodemon server.js to start the process and create your network
+
+# Demo
+https://watch.screencastify.com/v/2Ai5svxSt1clB0r78o5V
